@@ -39,7 +39,7 @@ const Login = () => {
     }
     return (
         <>
-            <h2>LOGIN IN !</h2>
+            <h2>LOGIN IN </h2>
             <form onSubmit={handlerSubmit}>
                 <input type='email' name='email' placeholder='Email' />
                 <input type='password' name='password' placeholder='password' />
