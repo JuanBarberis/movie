@@ -7,9 +7,10 @@ export default function NavBar() {
     <>
       <div className='nav-bar'>
         <CgMenu className='menu-ham' />
-          <Link to={'/'} className='navbar'>Incio</Link>
-          <Link to={'/home'} className='navbar'>Peliculas</Link>
-          <Link to={'/home'} className='navbar'>Contacto</Link>
+          <Link to={'/home'} className='navbar'>Incio</Link>
+          <Link to={'/login'} className='navbar'>Login</Link>
+          <Link to={'/movie'} className='navbar'>Peliculas</Link>
+          <Link to={'/contact'} className='navbar'>Contacto</Link>
       </div >
     </>
   )

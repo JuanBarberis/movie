@@ -2,7 +2,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Home = () => {
+const Movie = ()=>{
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -11,12 +11,9 @@ const Home = () => {
             navigate('/login')
         }
     }, [])
-
-    return (
-        <>
-            <h1>SOY EL HOME</h1>
-        </>
+    return(
+        <h2>Soy Movie</h2>
     )
 }
 
-export default Home;
+export default Movie;
