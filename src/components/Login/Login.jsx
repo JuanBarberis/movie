@@ -2,9 +2,10 @@ import React from 'react'
 import axios from 'axios';
 import swal from 'sweetalert'
 import { useNavigate } from 'react-router-dom';
+import './login.css'
 
 const Login = () => {
-    const navigate =useNavigate()
+    const navigate = useNavigate()
     const handlerSubmit = (e) => {
         e.preventDefault();
         const email = e.target.email.value;
@@ -39,12 +40,14 @@ const Login = () => {
     }
     return (
         <>
-            <h2>LOGIN IN </h2>
-            <form onSubmit={handlerSubmit}>
-                <input type='email' name='email' placeholder='Email' />
-                <input type='password' name='password' placeholder='password' />
-                <button type='submit' >Sign In</button>
-            </form>
+            <div className='div-login'>
+                <form className='signin' onSubmit={handlerSubmit}>
+                    <h2 className='title-login'>LOGIN IN </h2>
+                    <input className='form-login' type='email' name='email' placeholder='Email' />
+                    <input className='form-login' type='password' name='password' placeholder='password' />
+                    <button type='submit' >Sign In</button>
+                </form>
+            </div>
         </>
     )
 }
